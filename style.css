@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Courgette', cursive;
+
+}
+
+body {
+    background: rgba(230, 210, 209, 0.5);
+
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    background: rgba(255, 0, 47, 0.7);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#header-img {
+    width: 20vw;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 2rem;
+    font-family: 'Courgette', cursive;
+    /*   font-family: 'Roboto Slab', serif; */
+}
+
+
+
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+li:hover {
+    background: rgba(148, 148, 148, 0.3)
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+#form {
+    margin: 4rem 0;
+}
+
+input {
+    display: block;
+    margin: 20px auto;
+    width: 40%;
+}
+
+#email {
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background: rgba(148, 27, 27, 0.7);
+}
+
+#email::placeholder {
+    color: white;
+}
+
+#submit {
+    width: 40%;
+    padding: 5px;
+    background: rgba(148, 148, 148, 0.8);
+    border: 2px solid rgba(148, 148, 148, 1);
+    border-radius: 5px;
+    color: rgba(148, 27, 27, 0.9);
+    font-weight: bold;
+}
+
+.discriptions {
+    margin: 6rem auto;
+    width: 80%;
+    display: grid;
+    grid-template-areas: "flame material material material"
+        "truck shipping shipping shipping"
+        "apple quality quality quality";
+    gap: 2rem;
+}
+
+#flame {
+    grid-area: flame;
+}
+
+#material {
+    grid-area: material;
+}
+
+#truck {
+    grid-area: truck;
+}
+
+#shipping {
+    grid-area: shipping
+}
+
+#apple {
+    grid-area: apple;
+}
+
+#quality {
+    grid-area: quality;
+}
+
+i {
+    font-size: 3rem;
+    color: rgba(255, 0, 47, 0.9);
+    margin-right: 20px;
+}
+
+#video {
+    display: block;
+    margin: 8rem auto;
+}
+
+#pricing {
+    width: 80%;
+    margin: 10rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices {
+    width: 30%;
+    border: 2px solid rgba(148, 148, 148, 1);
+    border-radius: 5px;
+}
+
+.prices h3 {
+    text-align: center;
+    padding: 10px;
+    background: rgba(148, 148, 148, 0.5);
+}
+
+.price {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.price-descriptions {
+    width: 55%;
+    margin: auto;
+    text-align: justify;
+}
+
+button {
+    padding: 8px 15px;
+    display: block;
+    margin: 1rem auto;
+    background: rgba(255, 0, 47, 0.9);
+    border: none;
+    border-radius: 5px;
+    color: rgba(263, 263, 263, 0.9);
+    cursor: pointer;
+}
+
+#footer {
+    background: rgba(148, 148, 148, 0.8);
+    margin: 5rem 0 0 0;
+    padding: 2rem .5rem;
+    text-align: right;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    #video {
+        width: 80%;
+        height: auto;
+    }
+
+    #pricing {
+        display: block;
+        width: 80%;
+    }
+
+    .prices {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
